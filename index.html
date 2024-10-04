@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kakerucmdのお部屋</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.webp" alt="サイトロゴ" class="logo">
+            </a>
+            <ul>
+                <li><a href="#about" class="nav-btn">サイト概要</a></li>
+                <li><a href="#socials" class="nav-btn">SNS一覧</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1 id="title">kakerucmdのお部屋</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>サイト概要</h2>
+        <p>このサイトはkakerucmdが作った自己紹介サイト的なものです。</p>
+        <p>関連サイトとかいろいろ載せます</p>
+    </section>
+
+    <section id="socials">
+        <h2>SNS</h2>
+        <div class="social-container twitter">
+            <button class="social-btn" onclick="toggleSocialContent(this)">Twitter</button>
+            <div class="social-content">
+                <a href="https://x.com/kakerucmd_lw" target="_blank" class="social-link">
+                    kakerucmd🧹(@kakerucmd_lw)
+                </a>
+            </div>
+        </div>
+        <div class="social-container youtube">
+            <button class="social-btn" onclick="toggleSocialContent(this)">Youtube</button>
+            <div class="social-content">
+                <a href="https://www.youtube.com/@kakerucmd" target="_blank" class="social-link">
+                    kakerucmd🧹(@kakerucmd)
+                </a>
+            </div>
+        </div>
+        <div class="social-container discord">
+            <button class="social-btn" onclick="toggleSocialContent(this)">Discord</button>
+            <div class="social-content">
+                <a href="https://discord.com/invite/Sem9TDJ4Ur" target="_blank" class="social-link">
+                    お掃(ryのロスワ鯖
+                </a>
+            </div>
+        </div>
+    </section>    
+
+    <section id="related-sites">
+        <h2>関連サイト</h2>
+        <div class="social-container bot-project">
+            <a href="https://kakerucmd.github.io/huntersakuya_osouji-bot/" target="_blank" class="social-link">
+                お掃除上方修正しろbot Project
+            </a>
+        </div>
+    </section>
+     
+    <footer>
+        <p>&copy; 2024 kakerucmdのお部屋 by kakerucmd.</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

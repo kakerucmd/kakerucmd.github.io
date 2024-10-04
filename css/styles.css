@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mochiy Pop One', sans-serif;
+  color: #333;
+  line-height: 1.7;
+  background-color: #f4f4f9;
+  font-size: 16px;
+}
+
+p {
+  font-size: 17px;
+}
+
+header {
+  background-color: #282c34;
+  padding: 10px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(45deg, #67b26f, #4ca2cd);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-image: linear-gradient(45deg, #4ca2cd, #67b26f);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.webp');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 10px solid #282c34;
+}
+
+#hero .container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-150px);
+  text-transform: auto;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  border-left: 5px solid #67b26f;
+  border-right: 5px solid #4ca2cd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#title {
+  display: inline-block;
+  position: relative;
+  animation: clip-text .5s 
+  ease-in-out forwards;
+}
+
+#title::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  position: absolute;
+  inset: 0;
+  animation: clip-cover .5s 
+  ease-in-out forwards;
+  animation-delay: .5s;
+}
+
+@keyframes clip-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes clip-cover {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+#socials {
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #67b26f;
+  border-right: 5px solid #4ca2cd;
+}
+
+.social-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #67b26f;
+}
+
+.twitter {
+  border-left: 5px solid #1DA1F2;
+  border-right: 5px solid #1DA1F2;
+}
+
+.youtube {
+  border-left: 5px solid #FF0000;
+  border-right: 5px solid #FF0000;
+}
+
+.discord {
+  border-left: 5px solid #5865F2;
+  border-right: 5px solid #5865F2;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #67b26f;
+}
+
+.social-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-content {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none;
+}
+
+
+.social-container.active .social-content {
+  display: block;
+}
+
+.social-btn {
+  font-family: 'Mochiy Pop One', sans-serif;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  text-align: left;
+}
+
+#related-sites {
+  background-color: #fff;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #67b26f;
+  border-right: 5px solid #4ca2cd;
+}
+
+.bot-project {
+  border-left: 5px solid #41c9ff;
+  border-right: 5px solid #41c9ff;
+}
+
+.bot-project .social-link {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.bot-project .social-link:hover {
+  color: #67b26f;
+}
+
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 5px solid #67b26f;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero .container {
+    transform: translateY(0);
+  }
+
+  #about, #socials, #related-sites {
+    padding: 20px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about, #socials, #related-sites {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  #hero .container {
+    transform: translateY(-400px);
+  }
+}
