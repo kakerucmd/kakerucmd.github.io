@@ -12,10 +12,6 @@ body {
   font-size: 16px;
 }
 
-p {
-  font-size: 17px;
-}
-
 header {
   background-color: #282c34;
   padding: 10px 0;
@@ -346,9 +342,5 @@ footer {
     padding: 10px;
     margin: 10px auto;
     max-width: 90%;
-  }
-
-  #hero .container {
-    transform: translateY(-400px);
   }
 }
